@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>PayFo</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+   <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Libre+Baskerville&family=PT+Serif:ital,wght@1,700&family=Poltawski+Nowy:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <!-- <link href="assets/vendor/aos/aos.css" rel="stylesheet"> -->
+  <link href="{{url_for('static', filename = 'assets/vendor/aos/aos.css')}}" rel="stylesheet">
+
+  <!-- <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+  <link href="{{url_for('static', filename = 'assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+
+  <!-- <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"> -->
+  <link href="{{url_for('static', filename = 'assets/vendor/bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet">
+
+  <!-- <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet"> -->
+  <link href="{{url_for('static', filename = 'assets/vendor/boxicons/css/boxicons.min.css')}}" rel="stylesheet">
+
+  <!-- <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet"> -->
+  <link href="{{url_for('static', filename = 'assets/vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet">
+
+  <!-- <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"> -->
+  <link href="{{url_for('static', filename = 'assets/vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
+
+
+  <!-- Template Main CSS File -->
+  <!-- <link href="assets/css/style.css" rel="stylesheet"> -->
+  <link href="{{url_for('static', filename = 'assets/css/style.css')}}" rel="stylesheet">
+  <link rel="shortcut icon" href="{{ url_for('static', filename='assets/img/favicon.ico') }}">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container d-flex justify-content-between align-items-center">
+
+      <div id="logo">
+        <a class = "logo1" href="#hero"><span>PayFo</span></a>
+        <!--<a href="index.html"><img src="assets/img/logo.png" alt=""></a>-->
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!--<h1><a href="index.html">Regna</a></h1>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">Project</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container" data-aos="zoom-in" data-aos-delay="100">
+      <h1>Welcome to PayFo</h1>
+      <h2>Unleashing digital tranquility by safeguarding your transactions from </br>the lurking shadows of online payment fraud</h2>
+      <a href="/predict" class="btn-get-started">Get Started</a>
+    </div>
+  </section><!-- End Hero Section -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about">
+      <div class="container" data-aos="fade-up">
+        <div class="row about-container">
+
+          <div class="col-lg-6 content order-lg-1 order-2">
+            <h2 class="title">Why PayFo !</h2>
+            <p>
+              PayFo Unleashes the digital tranquility by safeguarding your transactions from the lurking shadows of online payment fraud.
+            </p>
+            <p>The objective of this project is to predict online payments fraud given the various parameters. This will be a classification problem since the target or dependent variable is the fraud(categorical values).The purpose of fraud of online paymetns are to separate the available supply of potable online payments into classes differing in superiority. 
+              We will be using classification algorithms such as Decision tree, Random forest,  svm, and Extra tree classifier.  We will train and test the data with these algorithms</p>
+
+
+          </div>
+
+          <div class="col-lg-6 background order-lg-2 order-1" data-aos="fade-left" data-aos-delay="100"></div>
+        </div>
+
+      </div>
+    </section>
+    <!-- End About Section -->
+
+   
+
+
+    <!-- ======= Team Section ======= -->
+    <section id="team">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h3 class="section-title">Team</h3>
+          <p class="section-description">As a part of our Data Science project, we made this project</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="pic"><img src="{{ url_for('static', filename='assets/img/team-1.jpg') }}" alt=""></div>
+              <h4>Lakshman Sundaresh Ganti</h4>
+              <span>20MIS0345</span>
+              <div class="social">
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="200">
+              <div class="pic"><img src="{{ url_for('static', filename='assets/img/team-2.jpg') }}" alt=""></div>
+              <h4>Medasani Supraja</h4>
+              <span>20MIS0064</span>
+              <div class="social">                
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="pic"><img src="{{ url_for('static', filename='assets/img/team-3.jpg') }}" class="image" alt=""></div>
+              <h4>Badigi Shiva Kumar</h4>
+              <span>20MIS0173</span>
+              <div class="social">               
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="400">
+              <div class="pic"><img src="{{ url_for('static', filename='assets/img/team-4.jpg') }}" alt=""></div>
+              <h4>Suresh Yathin Sadguru</h4>
+              <span>20MIS0396</span>
+              <div class="social">                
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <!-- <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script> -->
+  <script src="{{url_for('static', filename = 'assets/vendor/purecounter/purecounter_vanilla.js')}}"></script>
+
+  <!-- <script src="assets/vendor/aos/aos.js"></script> -->
+  <script src="{{url_for('static', filename = 'assets/vendor/aos/aos.js')}}"></script>
+
+  <!-- <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+  <script src="{{url_for('static', filename = 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+
+  <!-- <script src="assets/vendor/glightbox/js/glightbox.min.js"></script> -->
+  <script src="{{url_for('static', filename = 'assets/vendor/glightbox/js/glightbox.min.js')}}"></script>
+
+  <!-- <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script> -->
+  <script src="{{url_for('static', filename = 'assets/vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
+
+  <!-- <script src="assets/vendor/swiper/swiper-bundle.min.js"></script> -->
+  <script src="{{url_for('static', filename = 'assets/vendor/swiper/swiper-bundle.min.js')}}"></script>
+
+  
+
+  <!-- Template Main JS File -->
+  <!-- <script src="assets/js/main.js"></script> -->
+  <script src="{{url_for('static', filename = 'assets/js/main.js')}}"></script>
+
+</body>
+
+</html>
